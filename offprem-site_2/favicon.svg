@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#1b1815"/>
+  <rect x="6" y="6" width="52" height="52" rx="6" fill="none" stroke="#ff5a1f" stroke-width="2.5"/>
+  <text x="32" y="41" font-family="Arial, sans-serif" font-weight="900" font-size="24" fill="#f2ede3" text-anchor="middle">OP</text>
+  <circle cx="32" cy="50" r="2" fill="#ff5a1f"/>
+</svg>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This Week's Wire — OffPrem</title>
+<meta name="description" content="A weekly curated digest of real restaurant technology headlines from trade press, sorted by beat and linked back to the original source.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#1b1815">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OffPrem">
+<meta property="og:title" content="This Week's Wire — OffPrem">
+<meta property="og:description" content="A weekly curated digest of real restaurant technology headlines from trade press, sorted by beat and linked back to the original source.">
+<meta property="og:url" content="https://offprem.us/roundup.html">
+<meta property="og:image" content="https://offprem.us/icons/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="This Week's Wire — OffPrem">
+<meta name="twitter:description" content="A weekly curated digest of real restaurant technology headlines from trade press, sorted by beat and linked back to the original source.">
+<meta name="twitter:image" content="https://offprem.us/icons/og-image.jpg">
+<link rel="canonical" href="https://offprem.us/roundup.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ticker-bar">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Third-party delivery take rates under fresh scrutiny in three states</span>
+    <span>Menu-price inflation cools to slowest pace in two years</span>
+    <span>Two regional POS players confirm merger talks</span>
+    <span>Labor-share of restaurant revenue ticks up for Q3</span>
+    <span>Off-premise now outpaces dine-in at fast casual chains</span>
+    <span>Third-party delivery take rates under fresh scrutiny in three states</span>
+    <span>Menu-price inflation cools to slowest pace in two years</span>
+    <span>Two regional POS players confirm merger talks</span>
+    <span>Labor-share of restaurant revenue ticks up for Q3</span>
+    <span>Off-premise now outpaces dine-in at fast casual chains</span>
+  </div>
+</div>
+<header>
+  <nav class="nav wrap">
+    <a href="index.html" class="logo">OFF<span class="dot">•</span>PREM<small>Restaurant Tech, Covered</small></a>
+    <div class="navlinks">
+      <a href="category-news.html">News</a>
+      <a href="category-deals.html">Deals</a>
+      <a href="category-economics.html">Economics</a>
+      <a href="category-marketing.html">Marketing</a>
+      <a href="category-happenings.html">Happenings</a>
+      <a href="roundup.html">This Week</a>
+      <a href="#pass">Newsletter</a>
+    </div>
+    <div class="navcta">
+      <a href="#pass" class="btn btn-ghost">Sign in</a>
+      <a href="#pass" class="btn btn-primary">Subscribe</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">OffPrem</a><span>/</span>This Week's Wire</p>
+
+    <div class="cat-hero">
+      <div class="cat-hero-top">
+        <div class="cat-badge" style="background:var(--line);">W</div>
+        <div>
+          <h1>This Week's Wire</h1>
+        </div>
+      </div>
+      <p>A curated digest of real headlines from restaurant industry trade press, sorted into OffPrem's beats and refreshed automatically every week. Every item links straight to the original publisher &mdash; we don't rewrite or republish the reporting, just point you to it.</p>
+      <p style="margin-top:12px;"><span class="eyebrow" id="lastUpdated">Loading latest digest…</span></p>
+    </div>
+
+    <div id="roundupSections" style="margin-top:20px;">
+      <p style="color:var(--slate); font-family:var(--mono); font-size:13px;">Loading this week's headlines…</p>
+    </div>
+  </div>
+
+  <section id="pass">
+    <div class="wrap">
+      <div class="pass">
+        <div>
+          <p class="eyebrow">Free, every Tuesday</p>
+          <h2>Get The Weekly Pass.</h2>
+          <p>One email. Five stories. The restaurant tech news, deals, and numbers actually worth your morning coffee — nothing you have to sift through to find them.</p>
+          <div class="pass-list">
+            <div>The week's five most consequential stories, by beat</div>
+            <div>A running tracker of funding rounds and M&amp;A</div>
+            <div>One marketing teardown from a brand doing it well</div>
+            <div>Under two minutes to read, every time</div>
+          </div>
+        </div>
+        <div class="pass-form">
+          <span class="eyebrow">Subscribe</span>
+          <form onsubmit="return false;">
+            <input type="email" placeholder="you@restaurant.com" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Get The Weekly Pass →</button>
+            <p class="fine">No spam. Unsubscribe anytime. One send a week.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var CATEGORY_META = {
+    news:       { label: "News",       tagClass: "tag-news" },
+    deals:      { label: "Deals",      tagClass: "tag-deals" },
+    economics:  { label: "Economics",  tagClass: "tag-econ" },
+    marketing:  { label: "Marketing",  tagClass: "tag-marketing" },
+    happenings: { label: "Happenings", tagClass: "tag-happenings" }
+  };
+  var ORDER = ["news", "deals", "economics", "marketing", "happenings"];
+
+  function escapeHtml(str) {
+    return String(str).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  }
+
+  fetch("data/roundup.json", { cache: "no-store" })
+    .then(function (res) { if (!res.ok) throw new Error("fetch failed"); return res.json(); })
+    .then(function (data) {
+      var updated = document.getElementById("lastUpdated");
+      if (data.generated_at) {
+        var d = new Date(data.generated_at);
+        updated.textContent = "Last updated " + d.toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" });
+      }
+
+      var container = document.getElementById("roundupSections");
+      var html = "";
+      var anyItems = false;
+
+      ORDER.forEach(function (key) {
+        var items = (data.categories && data.categories[key]) || [];
+        if (!items.length) return;
+        anyItems = true;
+        var meta = CATEGORY_META[key];
+        html += '<div style="margin-bottom:44px;">';
+        html += '<h3 style="font-family:var(--display); font-size:20px; font-weight:800; color:var(--chit); margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid #3a332c;">' + meta.label + '</h3>';
+        html += '<div class="list-rows">';
+        items.forEach(function (item) {
+          html += '<a class="list-row" href="' + item.link + '" target="_blank" rel="noopener" style="padding:18px 0;">';
+          html += '<div class="list-content">';
+          html += '<h3 style="font-size:16px;">' + escapeHtml(item.title) + '</h3>';
+          html += '<div class="list-meta"><span class="tag ' + meta.tagClass + '">' + meta.label + '</span><span>' + escapeHtml(item.source) + '</span><span>' + escapeHtml(item.published) + '</span></div>';
+          html += '</div></a>';
+        });
+        html += '</div></div>';
+      });
+
+      if (!anyItems) {
+        html = '<p style="color:var(--slate); font-family:var(--mono); font-size:13px;">No fresh items in the last digest window &mdash; check back after the next weekly update.</p>';
+      }
+
+      container.innerHTML = html;
+    })
+    .catch(function () {
+      document.getElementById("roundupSections").innerHTML =
+        '<p style="color:var(--slate); font-family:var(--mono); font-size:13px;">Could not load this week\'s digest right now &mdash; try refreshing.</p>';
+      document.getElementById("lastUpdated").textContent = "";
+    });
+})();
+</script>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="logo">OFF<span class="dot">•</span>PREM</a>
+        <p>The trade press for restaurant tech — news, deals, economics, and marketing, covered weekly.</p>
+        <p class="foot-owner">Published by <a href="https://popcorngtm.com" target="_blank" rel="noopener">Popcorn GTM →</a></p>
+      </div>
+      <div class="foot-col">
+        <h5>Coverage</h5>
+        <ul>
+          <li><a href="category-news.html">News</a></li>
+          <li><a href="category-deals.html">Deals</a></li>
+          <li><a href="category-economics.html">Economics</a></li>
+          <li><a href="category-marketing.html">Marketing</a></li>
+          <li><a href="category-happenings.html">Happenings</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About OffPrem</a></li>
+          <li><a href="https://popcorngtm.com" target="_blank" rel="noopener">Popcorn GTM</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Submit a tip</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:tips@offprem.us">tips@offprem.us</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Modern Solutions for Modern Restaurants →</a></li>
+          <li><a href="#pass">Subscribe</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 OffPrem. Published by Popcorn GTM.</p>
+      <div class="foot-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/ticker.js" defer></script>
+</body>
+</html>
